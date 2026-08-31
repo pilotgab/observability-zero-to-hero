@@ -26,7 +26,7 @@
 
 ### Step 1: Instrumenting Your Code
 - To start tracing, you need to instrument your services. This means adding tracing capabilities to your code. Most popular programming languages and frameworks have libraries or middleware that make this easy.
-- We have already instrumented our code using OpenTelemetry libraries/packages. For more details, refer to `day-4/application/service-a/tracing.js` or `day-4/application/service-b/tracing.js`.
+- I have already instrumented the application code with OpenTelemetry libraries; see `day-4/application/service-a/tracing.js` and `day-4/application/service-b/tracing.js` for the implementation.
 
 
 ### Step 2: Components of Jaeger
@@ -101,4 +101,3 @@ kubectl delete -k alerts-alertmanager-servicemonitor-manifest/
 eksctl delete cluster --name observability
 
 ```
-

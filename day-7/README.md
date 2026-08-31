@@ -76,7 +76,7 @@ eksctl create iamserviceaccount \
 ```
 - This command creates an IAM role for the EBS CSI controller.
 - IAM role allows EBS CSI controller to interact with AWS resources, specifically for managing EBS volumes in the Kubernetes cluster.
-- We will attach the Role with service account
+- I attach this role to the service account.
 
 ### 📝 Step 3: Retrieve IAM Role ARN
 ```bash
@@ -94,7 +94,7 @@ eksctl create addon --cluster observability --name aws-ebs-csi-driver --version 
 
 
 ### 🧩 Step 5: Understand the Application
-- We have two very simple microservice A (`microservice-a`) & B (`microservice-a`), Built with Golang using the Gin web framework for handling HTTP requests.
+- I built two simple services, Microservice A (`microservice-a`) and Microservice B (`microservice-b`), in Go using the Gin web framework to handle HTTP requests.
 - **Microservice A** API Endpoints:
     - `GET /hello-a` – Returns a greeting message
     - `GET /call-b` – Calls another service (Service B) and returns its response

@@ -108,7 +108,7 @@ kubectl apply -k kubernetes-manifest/
 
 ## 5) Configure Alertmanager
 - Review the Alertmanager configuration files located in `day-4/alerts-alertmanager-servicemonitor-manifest` but below is the brief overview
-    - Before configuring Alertmanager, we need credentials to send emails. For this project, we are using Gmail, but any SMTP provider like AWS SES can be used. so please grab the credentials for that.
+    - I configured this project to send Alertmanager notifications through Gmail, although you can use another SMTP provider such as AWS SES; obtain the appropriate credentials before continuing.
     - Open your Google account settings and search App password & create a new password & put the password in `day-4/alerts-alertmanager-servicemonitor-manifest/email-secret.yml`
     - One last thing, please add your email id in the `day-4/alerts-alertmanager-servicemonitor-manifest/alertmanagerconfig.yml`
 - **HighCpuUsage**: Triggers a warning alert if the average CPU usage across instances exceeds 50% for more than 5 minutes.

@@ -1,7 +1,7 @@
 
 # 📚 7-Day Observability Tutorial Series
 
-Welcome to the 7-Day Observability Tutorial Series! This repository contains the code and detailed explanations for setting up and understanding observability in Kubernetes using Prometheus, Grafana, Elasticsearch Fluentbit, Kibana, Jaeger, groundcover(eBPF), opentelemetry e.t.c.,.
+I created this 7-Day Observability Tutorial Series to explain how I set up observability in Kubernetes using Prometheus, Grafana, Elasticsearch, Fluent Bit, Kibana, Jaeger, Groundcover (eBPF), and OpenTelemetry, with the supporting code included in this repository.
 
 ## 📅 Overview of Each Day
 
@@ -75,4 +75,3 @@ Welcome to the 7-Day Observability Tutorial Series! This repository contains the
   - Learn how OpenTelemetry simplifies the process of collecting and exporting telemetry data.
   - Understand the benefits of a unified observability approach using OpenTelemetry.
   - Gain hands-on experience with setting up OpenTelemetry Collector, Prometheus, Jaeger, and Elasticsearch to monitor a Golang microservice application.
-

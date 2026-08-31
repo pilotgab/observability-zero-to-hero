@@ -39,7 +39,7 @@ eksctl create iamserviceaccount \
 ```
 - This command creates an IAM role for the EBS CSI controller.
 - IAM role allows EBS CSI controller to interact with AWS resources, specifically for managing EBS volumes in the Kubernetes cluster.
-- We will attach the Role with service account
+- I attach this role to the service account.
 
 ### 2) Retrieve IAM Role ARN
 ```bash
@@ -100,7 +100,7 @@ helm install fluent-bit fluent/fluent-bit -f fluentbit-values.yaml -n logging
 ```
 
 ## ✅ Conclusion
-- We have successfully installed the EFK stack in our Kubernetes cluster, which includes Elasticsearch for storing logs, Fluentbit for collecting and forwarding logs, and Kibana for visualizing logs.
+- At this point, I have installed the EFK stack in my Kubernetes cluster: Elasticsearch stores the logs, Fluent Bit collects and forwards them, and Kibana provides the visualizations.
 - To verify the setup, access the Kibana dashboard by entering the `LoadBalancer DNS name followed by :5601 in your browser.
     - `http://LOAD_BALANCER_DNS_NAME:5601`
 - Use the username and password retrieved in step 6 to log in.
