@@ -1,3 +1,3 @@
 # ALB Controller Installation
 
-Follow the steps mentioned [here]("https://github.com/iam-veeramalla/aws-devops-zero-to-hero/blob/main/day-22/alb-controller-add-on.md")
+Follow the official [AWS Load Balancer Controller installation guide](https://kubernetes-sigs.github.io/aws-load-balancer-controller/latest/deploy/installation/).

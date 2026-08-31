@@ -12,11 +12,11 @@ metadata:
 
 spec:
   ports:
-  - name: b-service-port
-    port: 80
-    protocol: TCP
-    targetPort: 80
+    - name: b-service-port
+      port: 80
+      protocol: TCP
+      targetPort: 80
+      containerPort: 80
   selector:
     app: go-service-b-deployment
   type: LoadBalancer
-
